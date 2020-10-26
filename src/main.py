@@ -35,7 +35,6 @@ if __name__ == "__main__":
 					"license_type": { "type": "keyword" },
 					"summons_number": { "type": "keyword" },
 					"issue_date": { "type": "date", "format": "mm/dd/yyyy" },
-					"violation_time": {"type": "keyword"},
 					"violation": { "type": "keyword" },
 					"fine_amount": { "type": "float" },
 					"penalty_amount": { "type": "float" },
@@ -44,7 +43,6 @@ if __name__ == "__main__":
 					"payment_amount": { "type": "float" },
 					"amount_due": { "type": "float" },
 					"precinct": { "type": "keyword" },
-					"county": { "type": "keyword" },
 					"issuing_agency": { "type": "keyword" }
 					}
 				}
@@ -65,7 +63,6 @@ if __name__ == "__main__":
 				violation["license_type"] = violation["license_type"],
 				violation["summons_number"] = violation["summons_number"],
 				violation["issue_date"] = violation["issue_date"],
-				violation["violation_time"] = violation["violation_time"],
 				violation["violation"] = violation["violation"],
 				violation["fine_amount"] = float(violation["fine_amount"]),
 				violation["penalty_amount"] = float(violation["penalty_amount"]),
@@ -74,7 +71,6 @@ if __name__ == "__main__":
 				violation["payment_amount"] = float(violation["payment_amount"]),
 				violation["amount_due"] = float(violation["amount_due"]),
 				violation["precinct"] = violation["precinct"],
-				violation["county"] = violation["county"],
 				violation["issuing_agency"] = violation["issuing_agency"] 
 			
 				r = requests.post(f"{ES_HOST}/parkingdata/_doc",auth=HTTPBasicAuth(ES_USERNAME,ES_PASSWORD),json=violation)
