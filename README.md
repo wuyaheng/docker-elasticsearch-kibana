@@ -14,7 +14,7 @@ In this project, I used docker, Elastic Search and Kibana to
 
 
 ## TechUsed
-Docker, Elastic Search, Kibana, Python
+Docker, Elasticsearch, Kibana, Python
 
 ## Usage
 First of all
