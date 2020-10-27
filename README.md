@@ -17,7 +17,7 @@ I wrote a python script that runs in docker to consume data from the Socrata Ope
 
 
 ## TechUsed
-Docker, Elasticsearch, Kibana, Python
+Docker, Elasticsearch, Kibana, Python, Terminal
 
 ## Usage
 First of all
