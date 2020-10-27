@@ -20,7 +20,14 @@ I wrote a python script that runs in docker to consume data from the Socrata Ope
 Docker, Elasticsearch, Kibana, Python, Terminal
 
 ## Usage
-First of all
+Step 1: Build the docker image 
+```
+docker build -t bigdata1:1.0 .
+```
+Step 2: Run the docker container 
+```
+docker run -v ${PWD}:/app -e DATASET_ID=”XXX” -e APP_TOKEN=”XXX” -e ES_HOST=”XXX” -e ES_USERNAME=”XXX” -e ES_PASSWORD=”XXX” bigdata1:1.0 python src/main.py –page_size=1000 –num_pages=1000 
+```
 
 ## Questions
 ![user profile image](https://avatars0.githubusercontent.com/u/52837649?v=4)
