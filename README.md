@@ -6,9 +6,7 @@ In this project, I used docker, Elastic Search and Kibana to
 
 ## Table of Contents
 
-* [Tech/Framework Used](#TechUsed)
-
-* [link](#Link)
+* [TechUsed](#TechUsed)
 
 * [Usage](#usage) 
 
@@ -16,10 +14,7 @@ In this project, I used docker, Elastic Search and Kibana to
 
 
 ## TechUsed
-Docker, EC2
-
-## Link
-https://search-sta9760f2020phoebe-5ehbcxd46byoffdpurpgvmol2y.us-east-2.es.amazonaws.com/
+Docker, Elastic Search, Kibana, Python
 
 ## Usage
 First of all
