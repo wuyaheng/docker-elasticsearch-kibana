@@ -1,4 +1,5 @@
 # NYC Open Parking and Camera Violation Dashboard
+![PARKING](https://user-images.githubusercontent.com/52837649/97363669-51f43380-1879-11eb-834f-933fe1cf5630.gif)
 
 ## Description
 In this project, the NYC Open Parking and Camera Violation Dashboard, I applied what I have learned about EC2, Docker, Elasticsearch and Kibana to a real-world dataset powered by NYC Open Data. This dataset has 56.9 million rows and 19 columns. Each row is an open parking and camera violations issued in New York city traced back from 2016 to now. The columns include the violation type, the violation time, the fine amount, and the penalty amount among other violation details.
