@@ -23,7 +23,7 @@ Docker, Elasticsearch, Kibana, Python, Terminal
 ## Usage
 Step 1: Build the docker image 
 ```
-docker build -t bigdata1:1.0 .
+docker build -t bigdata1:1.0 . docker-elasticsearch-kibana/
 ```
 Step 2: Run the docker container 
 ```
