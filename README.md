@@ -30,7 +30,5 @@ Step 2: Run the docker container
 docker run -v ${PWD}:/app -e DATASET_ID=“XXX” -e APP_TOKEN=“XXX” -e ES_HOST=“XXX” -e ES_USERNAME=“XXX” -e ES_PASSWORD=“XXX” bigdata1:1.0 python src/main.py –page_size=1000 –num_pages=1000 
 ```
 ## Questions
-![user profile image](https://avatars0.githubusercontent.com/u/52837649?v=4)
-
-For questions about the project contact wuyaheng or directly at wuyaheng2016@gmail.com.
+For questions about the project contact wuyaheng or directly at wuyaheng2016@gmail.com
 
