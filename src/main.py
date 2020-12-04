@@ -22,7 +22,7 @@ ES_PASSWORD = os.environ["ES_PASSWORD"]
 	
 if __name__ == "__main__":
 	try:
-		r = requests.put(f"{ES_HOST}/parkingdata",
+		r = requests.put(f"{ES_HOST}/dataset",
 			auth=HTTPBasicAuth(ES_USERNAME,ES_PASSWORD),
 			json={
 				"settings": {
@@ -77,7 +77,7 @@ if __name__ == "__main__":
 				violation["county"] = violation["county"],
 				violation["issuing_agency"] = violation["issuing_agency"] 
 			
-				r = requests.post(f"{ES_HOST}/parkingdata/_doc",auth=HTTPBasicAuth(ES_USERNAME,ES_PASSWORD),json=violation)
+				r = requests.post(f"{ES_HOST}/dataset/_doc",auth=HTTPBasicAuth(ES_USERNAME,ES_PASSWORD),json=violation)
 			except Exception as e:
 				print(e)  
 				continue
